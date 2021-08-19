@@ -1,0 +1,2 @@
+A saída desse programa será:
+2, 2, 1
