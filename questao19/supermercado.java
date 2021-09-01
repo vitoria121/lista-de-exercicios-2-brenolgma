@@ -7,6 +7,8 @@ quantidade em estoque. Um pedido de um cliente é composto de itens, onde cada
 item especifica o produto que o cliente deseja e a respectiva quantidade. Esse
 pedido pode ser pago em dinheiro, cheque ou cartão.”
 
+Atividade para 08/09/2021
+
 - Usuário que deve Adicionar itens ao pedido (Apresente a lista de produtos e
 quantidade disponível)
 - Editar o pedido (Apresente a lista de produtos e quantidade disponível)
