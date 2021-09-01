@@ -8,28 +8,36 @@ item especifica o produto que o cliente deseja e a respectiva quantidade. Esse
 pedido pode ser pago em dinheiro, cheque ou cartão.”
 */
 
-public class Produto {
+public class Itens {
 
-    private String nome;
-    private double preco;
-    private int quantidadeEstoque;
+    private int id;
+    private Produto produto;
+    private int quantidade;
 
-    public Produto(String nome, double preco, int quantidade) {
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidadeEstoque = quantidade;
+    public Itens(int id, Produto produto, int quantidade) {
+        this.id = id;
+        this.produto = produto;
+        if (quantidade > 0 && quantidade <= produto.getQuantidade()) {
+            this.quantidade = quantidade;
+        } else {
+            this.quantidade = 0;
+        }
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
-        return this.nome;
+        return produto.getNome();
     }
 
     public double getPreco() {
-        return this.preco;
+        return produto.getPreco();
     }
 
     public int getQuantidade() {
-        return this.quantidadeEstoque;
+        return quantidade;
     }
 
 }
